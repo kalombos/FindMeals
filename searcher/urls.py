@@ -3,5 +3,5 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     url(r'api/', include('searcher.api.urls', namespace='api')),
-    url(r'search/$', TemplateView.as_view(template_name='search.html')),
+    url(r'$', TemplateView.as_view(template_name='search.html')),
 ]
